@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    
+    <header>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="main-form" name="mainform">
+            <fieldset>
+                <legend>Your informations</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" maxlength="25" required><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" maxlength="25" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" maxlength="35" required><br><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" maxlength="50" required><br><br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" maxlength="25" required><br><br>
+                <label for="province">Province:</label>
+                <input type="text" id="province" name="province" maxlength="2" required><br><br>
+                <label>Choose your membership:</label><br>
+                <input type="radio" id="Premium" name="membership" value="Premium" checked>
+                <label for="Premium">Premium membership</label><br>
+                <input type="radio" id="Standard" name="membership" value="Standard">
+                <label for="Standard">Standard membership</label><br>
+                <input type="radio" id="Basic" name="membership" value="Basic">
+                <label for="Basic">Basic membership</label><br><br>
+                <button type="button" onclick=userForm()>Submit</button>
+                <button type="reset">Cancel</button>
+            </fieldset>
+        </form>
+        <div id="output">
+            <!-- here is where the user should see the result (output) -->
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Group AWP09: Antoine Ribot & Joseph Bénard
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
