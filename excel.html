@@ -16,14 +16,29 @@
         </nav>
     </header>
     <main>
-        <form id="main-form" name="mainform"> <!-- [[ code: the required form elements based on each page instructions ]] --> </form>
-        <div id="output"> <!-- here is where the user should see the result (output) --> </div>
+        <h1>Excel Functions</h1><br>
+        <form id="main-form" name="mainform">
+            <fieldset>
+                <label for="numbers">Enter your numbers separated by spaces:</label>
+                <input type="text" id="numbers" name="numbers"><br>
+                <input type="radio" id="AutoSum" name="excelfuns" value="AutoSum" checked>
+                <label for="AutoSum">AutoSum</label><br>
+                <input type="radio" id="Average" name="excelfuns" value="Average">
+                <label for="Average">Average</label><br>
+                <input type="radio" id="Max" name="excelfuns" value="Max">
+                <label for="Max">Max</label><br>
+                <input type="radio" id="Min" name="excelfuns" value="Min">
+                <label for="Min">Min</label><br><br>
+                <button type="button" onclick=myExcelFuns()>Calculate</button>
+            </fieldset>
+        </form>
+        <div id="output"> Result: </div>
     </main>
     <footer>
         <p>
             ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Group AWP09: Antoine Ribot & Joseph Bénard
         </p>
     </footer>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
